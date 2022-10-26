@@ -4,16 +4,7 @@ body {
 header {
     background: #0890a89b;
     padding: 20px 0;
-
 }
-h1{
-    text-align: center;
-    font-size: 1.5em;
-    margin: 0 0 0;
-    padding: 0.5em;
-}
-
-
 .caixa {
     position: relative;
     width: 940px;
@@ -68,7 +59,6 @@ nav a:hover{
 
 }
 
-
 .produtos h2{
     font-size: 30px;
     font-weight:bold;
@@ -96,12 +86,12 @@ footer {
 
 }
 
-main {
-    
+.contato-conteudo {
+    margin: 20px 0;
 }
 
 form {
-    margin: 20px 0;
+    margin: 20px 30px;
 }
 
 form label, form p {
@@ -140,7 +130,11 @@ form label, form p {
 }
 
 table {
-    margin: 20px;
+    position: absolute;
+    top: 920px;
+    right: 400px;
+    text-align: center;
+    margin: 20px 30px;
 }
 thead {
     background: rgb(37, 37, 37);
@@ -208,7 +202,7 @@ th,td{
     width: 940px;
     margin:0 auto;
     padding: 25px 25px;
-    box-shadow: inset 0 0 20px #ff005198;
+    box-shadow: inset 0 0 20px #020a62cb;
 }
 .mapa p{
     margin: 2em;
@@ -264,6 +258,7 @@ diferente */
 .caixa,.mapa-conteudo,.conteudo-beneficios,.utensilios-conteudo,.video {
         width: auto;
     }
+    
 
 .logo {
     text-align: center;
