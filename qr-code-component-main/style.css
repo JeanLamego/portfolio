@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.qrCodeImage {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+.qrCodeBox{
+    width: 22%;
+    background-color: white;
+    box-sizing: border-box;
+    border: 10px solid #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    margin: 100px auto;
+    padding: 2.5px;
+    
+}
+
+h1 {
+    
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0 15px;
+    
+    
+}
+p{
+    color: hsla(240, 100%, 0%, 0.547);
+    font-weight: lighter;
+    
+    font-size: 15px;
+}
+
+@media screen and (max-width:460px) {
+    
+    .qrCodeBox{
+        width: calc(100% - 50px);
+}
+}
