@@ -1,0 +1,276 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    background: #0890a89b;
+    padding: 20px 0;
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto; 
+}
+
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin:0 0 0 13px;
+    
+}
+nav a{
+    text-transform: uppercase;
+    color:#000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(21, 0, 255)
+    
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background-color: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 100px;
+}
+.produtos li:hover {
+    border-color:rgb(21, 0, 255) ;
+}
+.produtos li h2:hover {
+    font-size: 34px;
+
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.produtoDescricao{
+    font-size: 18px;
+}
+
+.produtoPreco {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 25px;
+}
+.copyright {
+    text-align:center;
+    font-size: 13px;
+    color: #FFFFFF;  
+    margin: 10px 0  
+
+}
+
+.contato-conteudo {
+    margin: 20px 0;
+}
+
+form {
+    margin: 20px 30px;
+}
+
+form label, form p {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contato-padrao {
+    display: block;
+    padding:10px 25px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.checkbox {
+    margin: 15px 0;
+}
+
+.solicitar-contato {
+    background: #0890a89b;
+    padding: 20px 0;
+    width: 40%;
+    color:white;
+    font-size: 20px;
+    font-weight:bold;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.solicitar-contato:hover {
+    background: blue;
+    transform:scale(1.1);
+}
+
+table {
+    position: absolute;
+    top: 920px;
+    right: 400px;
+    text-align: center;
+    margin: 20px 30px;
+}
+thead {
+    background: rgb(37, 37, 37);
+    color: silver;
+    font-weight: bold;
+
+}
+
+th,td{
+    font-size: 20px;
+    padding: 8px 15px;
+    border: 1px solid black;
+    
+}
+
+/* css da página inicial*/
+.banner {
+    width: 100%;
+    
+}
+
+.titulo-principal {
+    
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    padding: 1em;
+    clear: left;
+    
+}
+
+.utensilios {
+    width:120px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.principal{
+    background-color: #feffff;
+    padding: 2em 0;
+    
+}
+
+.utensilios-conteudo{
+    width: 940px;
+    margin:0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+
+.mapa {
+    padding:3em 0;
+    background:linear-gradient(rgb(255, 255, 255),#888888);
+}
+.mapa-conteudo{
+    width: 940px;
+    margin:0 auto;
+    padding: 25px 25px;
+    box-shadow: inset 0 0 20px #020a62cb;
+}
+.mapa p{
+    margin: 2em;
+    text-align: center;
+}
+
+.beneficios {
+    background:#888888;
+    padding: 1em 0;
+    
+}
+
+.conteudo-beneficios {
+    width:640px;
+    margin: 1em auto;
+    
+}
+.lista-beneficios{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.itens{
+    height: 1.5em;
+}
+.itens:before{
+    content: "✄";
+    font-weight: bold;
+}
+.itens:first-child{
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.5;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+/*Eu quero que todas as telas que tiverem largura maxima de 480px entreguem um estilo
+diferente */
+@media screen and (max-width: 480px){
+    
+.caixa,.mapa-conteudo,.conteudo-beneficios,.utensilios-conteudo,.video {
+        width: auto;
+    }
+    
+
+.logo {
+    text-align: center;
+}
+nav{
+    position: static;
+    text-align: center;
+}
+.itens{
+    height: 3em;
+}
+.itens,.imagem-beneficios{
+    width: 100%;
+}
+}
