@@ -1,0 +1,161 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces', serif;
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+} 
+.container {
+    margin: 30px auto;
+    padding: 0 30px;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+    
+}
+
+.product-preview{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    border-radius: 15px;
+    
+    
+    
+}
+
+.perfume-img img {
+    width:100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+
+}
+    
+    
+    
+
+    /* font-family: 'Fraunces', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+    width: 60%;
+    margin: 0; */
+/* } */
+
+
+.perfume-title{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: calc(1em * .5);
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+
+}
+
+
+ /* .product-preview {
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  } */
+    
+   
+/* 
+.product-preview img:first-child{
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
+} */
+
+.product-information {
+    
+    display: flex;
+    justify-content:space-between;
+    flex-flow: column;
+    padding: 3em;
+    
+    
+}
+
+.product-information h2{
+    font-size: 2.3em;
+    margin:0;
+}
+
+.perfume-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5em;
+    
+}
+.product-price-container{
+    display: flex;
+    align-items: center;   
+    
+}
+.new-product-price{
+    font-size:2.2em;
+    margin-right:15px;
+    color: hsl(158, 36%, 37%);
+}
+.old-product-price{
+    font-size: .9em;
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+}
+
+.btn{
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1em;
+    border-style: none;
+    background: hsl(158, 36%, 37%);
+    background-image: url(/product-preview-card-component-main/images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-position-x: 27%;
+    color: hsl(30, 38%, 92%);
+    font-weight: 700;
+}
+
+
+.btn:hover{
+    background-color: hsl(158, 53%, 19%);
+    cursor:pointer;
+}
+
+/* @media (max-width:768px){
+    body{
+        
+    }
+    .product-preview{
+        width:100%;
+        margin: 0 auto;
+    }
+    .product-information{
+        width: fit-content;
+
+}
+} */
+
+
+ 
